@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    textarea {
+      display: block;
+      resize: none;
+      margin: 5px 0;
+    }
+    .empty {
+    	border: 2px solid red;
+    }
+    ul {
+    	list-style: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <button class="btn_new_group">+</button>
+    <textarea cols="30" rows="10"></textarea>
+    <button class="assemble">Собрать</button>
+    <div class="radio_wrap">
+      <input id="one" class="radio" type="radio" name="val" checked>
+      <label id="lbl_one" for="one">Все</label>
+      <input id="two" class="radio" type="radio" name="val">
+      <label id="lbl_two" for="two">Чётные</label>
+      <input id="three" class="radio" type="radio" name="val">
+      <label id="lbl_three" for="three">Нечетные</label>
+    </div>
+    <ul>
+    	<li class="list">HTML 5</li>
+    	<li class="list">HTML 5</li>
+    	<li class="list">HTML 5</li>
+    	<li class="list">HTML 5</li>
+    	<li class="list">HTML 5</li>
+    </ul>
+    <input type="text" id="inp_new" placeholder="Введите новый элемент">
+    <button id="add">Добавить новый элемент</button>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
